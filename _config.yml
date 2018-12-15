@@ -1,14 +1,14 @@
 # Site settings
 # in the templates available like {{ site.myvariable }}.
 title: Clean portfolio theme for Jekyll powered by Bootstrap 4.
-email: your-email@domain.com
-brand: Your Name
+email: amazinggrace.us888@gmail.com
+brand: Yana Choy
 headline: Inventor, Engineer and Futurist
 description: > # this means to ignore newlines until "baseurl:"
   New Site
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
-copyright: 2016 Whatever Company, Inc. All Rights Reserved.
+copyright: Amazing Grace Health Supplies, Inc. All Rights Reserved.
 
 # Build settings
 markdown: kramdown
@@ -17,7 +17,7 @@ markdown: kramdown
 snapwidget: 247552
 
 # Contacts
-email: your.name@gmail.com
+email: amazinggrace.us888@gmail.com
 phone: +1-800-555-2016
 
 # Tracking
