@@ -1,25 +1,35 @@
-# Site settings
-# in the templates available like {{ site.myvariable }}.
-title: Clean portfolio theme for Jekyll powered by Bootstrap 4.
-email: amazinggrace.us888@gmail.com
-brand: Yana Choy
-headline: Inventor, Engineer and Futurist
-description: > # this means to ignore newlines until "baseurl:"
-  New Site
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
-copyright: Amazing Grace Health Supplies, Inc. All Rights Reserved.
+# Permalinks
+permalink:           pretty
 
-# Build settings
-markdown: kramdown
+# Setup
+title:               Progress
+tagline:             A responsive blog theme that illustrates reading progress. Suited for continous reading.
+url:                 http://alexanderussell.github.io
+baseurl:             /progress-for-jekyll
+analytics_id:
 
-# Account ids
-snapwidget: 247552
+# Owner/author information
+owner:
+  name:           Alex Russell
+  avatar:         avatar.png
+  bio:            "Designer."
+  email:          alex@collectivelymade.com
+  twitter:        alexanderussell
+  github:         alexanderussell
+  instagram:      alexanderussell
+  dribbble:       alexanderussell
+  location:       "Lincoln, NE"
 
-# Contacts
-email: amazinggrace.us888@gmail.com
-phone: +1-800-555-2016
 
-# Tracking
-googleAnalitycsID: UA-83933844-1
+# Custom vars
+version:             2.0.0
+github:
+  repo:              
 
+# Pagination
+paginate: 5
+paginate_path: "blog/page:num"
+
+# Gems
+gems:
+  - jekyll-paginate
