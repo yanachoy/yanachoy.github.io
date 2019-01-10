@@ -2,32 +2,21 @@
 layout: default
 ---
 
-<div class="articles">
-  <article class="post">
-    <header>
-      {% if page.img %}
-      <img src="{{site.baseurl}}/img/{{page.img}}" alt="{{page.img}}">
-      {% endif %}
-      <h1> {{ page.title }} </h1>
-    </header>
-    
+    <article id="main">
+  <header class="special container">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <section class="style4 wrapper container">
     {{ content }}
-    {% include _share-post.html %}
-  </article>
+  </section>
+    
+    <footer>
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" class="post-prev">&larr; Previous post</a> {% endif %}
+        {% if page.next %}
+        <a href="{{ page.next.url }}" class="post-next">Next post &rarr;</a> {% endif %}
+    </footer>
+</article>
 
-  <aside class="related">
-      <ul>
-        {% for post in site.related_posts limit: 5 %}
-        {% unless post.draft %}
-        <li>
-          <a href="{{site.baseurl}}{{post.url}}">
-            <h3><em>{{post.title}}</em></h3>
-            <small><b>{{post.author}}</b></small>
-          </a>
-        </li>
-        {% endunless %}
-        {% endfor %}
-      </ul>
-
-    </aside>
-</div>
